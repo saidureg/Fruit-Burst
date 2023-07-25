@@ -1,16 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
-</head>
-<body>
-    <header>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- tailwind and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/3984104833.js" crossorigin="anonymous"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@500;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- customized backgroundImages and color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'hero-bg': "url('./images/team.png')",
+                        'slider1-img': "url('./images/banner1.png')",
+                        'slider2-img': "url('./images/banner2.png')",
+                        'slider3-img': "url('./images/banner3.png')",
+                        'slider4-img': "url('./images/banner4.png')",
+                    },
+                    colors: {
+                        // clifford: '#da373d',
+                        'primary-color': '#F85559',
+                        'title-color': '#121212',
+                        'description-color': '#12121299',
+                    },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .font-popping {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="max-w-screen-xl mx-auto mb-10 md:mb-28">
+        <!-- nav -->
+        <nav class="mt-5 md:mt-10 lg:mt-12 font-lato">
+            <div class="navbar-center lg:bg-primary-color lg:rounded-full">
+
+                <div class="navbar hidden lg:flex justify-between py-6 px-12">
+                    <ul class="menu menu-horizontal px-1 text-lg text-white lg:opacity-95 font-medium">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+
+                    <div>
+                        <img src="./images/logo.png" alt="logo">
+                        <a class="ml-2 normal-case text-4xl text-white font-bold">Fruit Burst</a>
+                    </div>
+
+                    <div class="form-control">
+                        <div class="input rounded-full py-3 px-5">
+                            <input type="text" placeholder="Search here" class="" />
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- responsive -->
+            <div class="navbar flex items-center ml-2 lg:hidden">
+                <div class="flex flex-1 items-center lg:hidden">
+                    <img class="w-8" src="./images/logo.png" alt="logo">
+                    <a class="ml-2 normal-case text-xl">Fruit Burst</a>
+                </div>
+                <div class="dropdown flex-1 text-right">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
     </header>
     <main>
-        
+
     </main>
 </body>
+
 </html>
