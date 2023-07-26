@@ -109,10 +109,10 @@
         <!-- ended nav -->
 
         <!-- started banner -->
-        <section class="my-20">
+        <div class="my-20 relative">
 
             <!-- slider -->
-            <div class="carousel w-full h-[350px] md:h-[400px] lg:h-[600px]">
+            <div class="carousel w-full h-[350px] md:h-[400px] lg:h-[600px] rounded-xl">
                 <!-- first slider -->
                 <div id="slide1"
                     class="carousel-item relative w-full bg-slider1-img bg-no-repeat bg-cover bg-gradient-to-r from-[#121212] to-[#121212]">
@@ -234,12 +234,41 @@
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="hidden lg:block absolute -bottom-24 left-36">
+                <div class="card flex flex-row  bg-white shadow-xl max-w-screen-lg mx-auto">
+                    <!-- first card -->
+                    <div class="card-body flex flex-col items-center">
+                        <img class="w-[140px]" src="./images/fruit1.png" alt="Grape" />
+                        <h2 class="card-title">Grape</h2>
+                    </div>
+                    <!-- second card -->
+                    <div class="card-body flex flex-col items-center">
+                        <img class="w-[110px]" src="./images/fruit2.png" alt="Grape" />
+                        <h2 class="card-title">Orange</h2>
+                    </div>
+                    <!-- third card -->
+                    <div class="card-body flex flex-col items-center">
+                        <img class="w-[145px]" src="./images/fruit3.png" alt="Grape" />
+                        <h2 class="card-title">Mango</h2>
+                    </div>
+                    <!-- fourth card -->
+                    <div class="card-body flex flex-col items-center">
+                        <img class="w-[140px]" src="./images/fruit4.png" alt="Grape" />
+                        <h2 class="card-title">Strawberry</h2>
+                    </div>
+                    <!-- fifth card -->
+                    <div class="card-body flex flex-col items-center">
+                        <img class="w-[137px]" src="./images/fruit5.png" alt="Grape" />
+                        <h2 class="card-title">Pomegranate</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- ended banner -->
     </header>
     <main class="w-11/12 lg:max-w-screen-xl mx-auto mb-10 md:mb-28">
         <!-- Deal of the days -->
-        <section>
+        <section class="lg:mt-48">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div>
                     <h3 class="text-title-color text-3xl lg:text-5xl font-extrabold font-popping">Deal of the day</h3>
@@ -571,31 +600,32 @@
     </main>
     <footer class="footer footer-center p-10 lg:py-32 space-y-5 bg-title-color text-white">
         <div class="flex">
-          <img src="./images/logo.png" alt="">
-          <p class="font-bold text-4xl font-lato">
-            Fruit Burst
-          </p> 
+            <img src="./images/logo.png" alt="">
+            <p class="font-bold text-4xl font-lato">
+                Fruit Burst
+            </p>
         </div>
 
-        <div class="flex flex-wrap lg:grid grid-flow-col gap-9 md:gap-10 text-base md:text-lg font-popping font-semibold">
-            <a class="link link-hover grow">Home</a> 
-            <a class="link link-hover grow">About Us</a> 
-            <a class="link link-hover grow">Shop</a> 
-            <a class="link link-hover grow">All Fruits</a> 
+        <div
+            class="flex flex-wrap lg:grid grid-flow-col gap-9 md:gap-10 text-base md:text-lg font-popping font-semibold">
+            <a class="link link-hover grow">Home</a>
+            <a class="link link-hover grow">About Us</a>
+            <a class="link link-hover grow">Shop</a>
+            <a class="link link-hover grow">All Fruits</a>
             <a class="link link-hover grow">Support</a>
             <a class="link link-hover grow">My Account</a>
-          </div>
-        <div>
-          <div class="flex flex-wrap lg:grid grid-flow-col gap-8">
-            <i class="fa-brands fa-twitter fa-2xl grow"></i>
-            <i class="fa-brands fa-facebook fa-2xl grow"></i>
-            <i class="fa-brands fa-youtube fa-2xl grow"></i>
-            <i class="fa-brands fa-linkedin-in fa-2xl grow"></i>
-            <i class="fa-brands fa-instagram fa-2xl grow"></i>
-            <i class="fa-brands fa-apple fa-2xl grow"></i>
-          </div>
         </div>
-      </footer>
+        <div>
+            <div class="flex flex-wrap lg:grid grid-flow-col gap-8">
+                <i class="fa-brands fa-twitter fa-2xl grow"></i>
+                <i class="fa-brands fa-facebook fa-2xl grow"></i>
+                <i class="fa-brands fa-youtube fa-2xl grow"></i>
+                <i class="fa-brands fa-linkedin-in fa-2xl grow"></i>
+                <i class="fa-brands fa-instagram fa-2xl grow"></i>
+                <i class="fa-brands fa-apple fa-2xl grow"></i>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
