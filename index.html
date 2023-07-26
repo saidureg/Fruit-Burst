@@ -177,7 +177,7 @@
                 <div id="slide3"
                     class="carousel-item relative w-full bg-slider3-img bg-no-repeat bg-cover bg-gradient-to-r from-[#121212] to-[#121212]">
                     <div class="hero-overlay bg-opacity-60"></div>
-                    
+
                     <!-- content -->
                     <div
                         class="py-10 px-3 font-popping md:max-w-lg lg:max-w-4xl space-y-4 absolute md:top-16  md:left-28 lg:left-44">
@@ -237,7 +237,258 @@
         </section>
         <!-- ended banner -->
     </header>
-    <main>
+    <main class="w-11/12 lg:max-w-screen-xl mx-auto mb-10 md:mb-28">
+        <!-- Deal of the days -->
+        <section>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div>
+                    <h3 class="text-title-color text-3xl lg:text-5xl font-extrabold font-popping">Deal of the day</h3>
+                    <p class="font-popping text-description-color font-medium mt-6 mb-12">Contrary to popular belief, is
+                        not simply random text. It has roots in a piece of classical <br>Latin literature from 45 BC,
+                        making
+                        it over 2000 years old.</p>
+                </div>
+                <div>
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                            <div class="flex items-center gap-4">
+                                <span class="countdown font-lato font-bold text-5xl">
+                                    <span style="--value:29;"></span>
+                                </span>
+                                <span><i class="fa-solid fa-ellipsis-vertical fa-xl"></i></span>
+                            </div>
+                            <p class="text-description-color font-medium">Days</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="flex items-center gap-4">
+                                <span class="countdown font-lato font-bold text-5xl">
+                                    <span style="--value:15;"></span>
+                                </span>
+                                <span><i class="fa-solid fa-ellipsis-vertical fa-xl"></i></span>
+                            </div>                           
+                            <p class="text-description-color font-medium">Hours</p>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="flex items-center gap-4">
+                                <span class="countdown font-lato font-bold text-5xl">
+                                    <span style="--value:25;"></span>
+                                </span>
+                                <span><i class="fa-solid fa-ellipsis-vertical fa-xl"></i></span>
+                            </div>  
+                            <p class="text-description-color font-medium">Minutes</p>
+                            
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="flex items-center gap-4">
+                                <span class="countdown font-lato font-bold text-5xl">
+                                    <span style="--value:08;"></span>
+                                </span>
+                            </div>  
+                            <p class="text-description-color font-medium">Seconds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 md::mt-4">
+                <!-- first card -->
+                <div class="pt-10 border border-[#1212121A] rounded-lg bg-white px-5 pb-2">
+                    <div class="flex justify-center">
+                        <img src="./images/fruit6.png" alt="apple" />
+                    </div>
+                    <div class="border-b border-[#1212121A] pb-6 mt-12 w-[240px] mx-auto">
+                        <h3 class="text-title-color font-lato text-2xl font-bold text-center">12.90$ - 18.85$</h3>
+                    </div>
+                    <div class="card-body text-center space-y-6">
+                        <p class=" text-description-color font-popping font-medium">Apples</p>
+                        <!-- rating -->
+                        <div class="text-amber-300">
+                            <span><i class="fa-solid fa-star fa-xl"></i></span>
+                            <span><i class="fa-solid fa-star fa-xl"></i></span>
+                            <span><i class="fa-solid fa-star-half-stroke fa-xl"></i></span>
+                            <span><i class="fa-regular fa-star fa-xl"></i></span>
+                            <span><i class="fa-regular fa-star fa-xl"></i></span>
+                        </div>
+
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn btn-ghost text-[#F85559] text-lg font-lato font-bold"
+                            onclick="my_modal_5.showModal()">Details</button>
+                        <dialog id="my_modal_5" class="modal modal-middle">
+                            <form method="dialog" class="modal-box px-10 py-3 lg:px-24 lg:py-16 space-y-3 lg:space-y-6">
+                                <div class="flex justify-center">
+                                    <img class="lg:w-[150px]" src="./images/fruit6.png" alt="">
+                                </div>
+                                <h3 class="font-extrabold font-popping 
+                               text-2xl lg:text-4xl">Apples</h3>
+                                <p class="py-2 lg:py-4 text-description-color font-popping font-medium">
+                                    Professional employees are there for you to pick the most amazing and fresh fruits.
+                                </p>
+                                <!-- rating -->
+                                <div class="text-amber-300">
+                                    <span><i class="fa-solid fa-star fa-xl"></i></span>
+                                    <span><i class="fa-solid fa-star fa-xl"></i></span>
+                                    <span><i class="fa-solid fa-star-half-stroke fa-xl"></i></span>
+                                    <span><i class="fa-regular fa-star fa-xl"></i></span>
+                                    <span><i class="fa-regular fa-star fa-xl"></i></span>
+                                </div>
+                                <div class="modal-action justify-around mb-4">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn btn-outline btn-error">Close</button>
+                                    <button class="btn bg-[#F85559] text-white rounded-lg">Buy Now</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+                <!-- second card -->
+                <div class="pt-10 border border-[#1212121A] rounded-lg bg-white px-5 pb-2">
+                    <div class="flex justify-center">
+                        <img src="./images/fruit7.png" alt="orange" />
+                    </div>
+                    <div class="border-b border-[#1212121A] pb-6 mt-12 w-[240px] mx-auto">
+                        <h3 class="text-title-color font-lato text-2xl font-bold text-center">12.90$ - 18.85$</h3>
+                    </div>
+                    <div class="card-body text-center space-y-6">
+                        <p class=" text-description-color font-popping font-medium">Orange</p>
+                        <!-- rating -->
+                        <div class="text-amber-300">
+                            <span><i class="fa-solid fa-star fa-xl"></i></span>
+                            <span><i class="fa-solid fa-star fa-xl"></i></span>
+                            <span><i class="fa-solid fa-star-half-stroke fa-xl"></i></span>
+                            <span><i class="fa-regular fa-star fa-xl"></i></span>
+                            <span><i class="fa-regular fa-star fa-xl"></i></span>
+                        </div>
+
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn btn-ghost text-[#F85559] text-lg font-lato font-bold"
+                            onclick="my_modal_6.showModal()">Details</button>
+                        <dialog id="my_modal_6" class="modal modal-middle">
+                            <form method="dialog" class="modal-box px-10 py-3 lg:px-24 lg:py-16 space-y-3 lg:space-y-6">
+                                <div class="flex justify-center">
+                                    <img class="lg:w-[200px]" src="./images/fruit7.png" alt="">
+                                </div>
+                                <h3 class="font-extrabold font-popping text-2xl lg:text-4xl">Orange</h3>
+                                <p class="py-2 lg:py-4 text-description-color font-popping font-medium">
+                                    Professional employees are there for you to pick the most amazing and fresh fruits.
+                                </p>
+                                <!-- rating -->
+                                <div class="text-amber-300">
+                                    <span><i class="fa-solid fa-star fa-xl"></i></span>
+                                    <span><i class="fa-solid fa-star fa-xl"></i></span>
+                                    <span><i class="fa-solid fa-star-half-stroke fa-xl"></i></span>
+                                    <span><i class="fa-regular fa-star fa-xl"></i></span>
+                                    <span><i class="fa-regular fa-star fa-xl"></i></span>
+                                </div>
+                                <div class="modal-action justify-around mb-4">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn btn-outline btn-error">Close</button>
+                                    <button class="btn bg-[#F85559] text-white rounded-lg">Buy Now</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+                <!-- third card -->
+                <div class="pt-10 border border-[#1212121A] rounded-lg bg-white px-5 pb-2">
+                    <div class="flex justify-center">
+                        <img src="./images/fruit8.png" alt="dragon" />
+                    </div>
+                    <div class="border-b border-[#1212121A] pb-6 mt-12 w-[240px] mx-auto">
+                        <h3 class="text-title-color font-lato text-2xl font-bold text-center">12.90$ - 18.85$</h3>
+                    </div>
+                    <div class="card-body text-center space-y-6">
+                        <p class=" text-description-color font-popping font-medium">Red Dragon</p>
+                        <!-- rating -->
+                        <div class="text-amber-300">
+                            <span><i class="fa-solid fa-star fa-xl"></i></span>
+                            <span><i class="fa-solid fa-star fa-xl"></i></span>
+                            <span><i class="fa-solid fa-star-half-stroke fa-xl"></i></span>
+                            <span><i class="fa-regular fa-star fa-xl"></i></span>
+                            <span><i class="fa-regular fa-star fa-xl"></i></span>
+                        </div>
+
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn btn-ghost text-[#F85559] text-lg font-lato font-bold"
+                            onclick="my_modal_7.showModal()">Details</button>
+                            <dialog id="my_modal_7" class="modal modal-middle">
+                                <form method="dialog" class="modal-box px-10 py-3 lg:px-24 lg:py-16 space-y-3 lg:space-y-6">
+                                    <div class="flex justify-center">
+                                        <img class="lg:w-[200px]" src="./images/fruit8.png" alt="">
+                                    </div>
+                                    <h3 class="font-extrabold font-popping text-2xl lg:text-4xl">Red Dragon</h3>
+                                    <p class="py-2 lg:py-4 text-description-color font-popping font-medium">
+                                        Professional employees are there for you to pick the most amazing and fresh fruits.
+                                    </p>
+                                    <!-- rating -->
+                                    <div class="text-amber-300">
+                                        <span><i class="fa-solid fa-star fa-xl"></i></span>
+                                        <span><i class="fa-solid fa-star fa-xl"></i></span>
+                                        <span><i class="fa-solid fa-star-half-stroke fa-xl"></i></span>
+                                        <span><i class="fa-regular fa-star fa-xl"></i></span>
+                                        <span><i class="fa-regular fa-star fa-xl"></i></span>
+                                    </div>
+                                    <div class="modal-action justify-around mb-4">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn btn-outline btn-error">Close</button>
+                                        <button class="btn bg-[#F85559] text-white rounded-lg">Buy Now</button>
+                                    </div>
+                                </form>
+                            </dialog>
+                    </div>
+                </div>
+                <!-- fourth card -->
+                <div class="pt-10 border border-[#1212121A] rounded-lg bg-white px-5 pb-2">
+                    <div class="flex justify-center">
+                        <img src="./images/fruit9.png" alt="banana" />
+                    </div>
+                    <div class="border-b border-[#1212121A] pb-6 mt-12 w-[240px] mx-auto">
+                        <h3 class="text-title-color font-lato text-2xl font-bold text-center">12.90$ - 18.85$</h3>
+                    </div>
+                    <div class="card-body text-center space-y-6">
+                        <p class=" text-description-color font-popping font-medium">Banana</p>
+                        <!-- rating -->
+                        <div class="text-amber-300">
+                            <span><i class="fa-solid fa-star fa-xl"></i></span>
+                            <span><i class="fa-solid fa-star fa-xl"></i></span>
+                            <span><i class="fa-solid fa-star-half-stroke fa-xl"></i></span>
+                            <span><i class="fa-regular fa-star fa-xl"></i></span>
+                            <span><i class="fa-regular fa-star fa-xl"></i></span>
+                        </div>
+
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn btn-ghost text-[#F85559] text-lg font-lato font-bold"
+                            onclick="my_modal_8.showModal()">Details</button>
+                            <dialog id="my_modal_8" class="modal modal-middle">
+                                <form method="dialog" class="modal-box px-10 py-3 lg:px-24 lg:py-16 space-y-3 lg:space-y-6">
+                                    <div class="flex justify-center">
+                                        <img class="lg:w-[200px]" src="./images/fruit9.png" alt="">
+                                    </div>
+                                    <h3 class="font-extrabold font-popping text-2xl lg:text-4xl">Banana</h3>
+                                    <p class="py-2 lg:py-4 text-description-color font-popping font-medium">
+                                        Professional employees are there for you to pick the most amazing and fresh fruits.
+                                    </p>
+                                    <!-- rating -->
+                                    <div class="text-amber-300">
+                                        <span><i class="fa-solid fa-star fa-xl"></i></span>
+                                        <span><i class="fa-solid fa-star fa-xl"></i></span>
+                                        <span><i class="fa-solid fa-star-half-stroke fa-xl"></i></span>
+                                        <span><i class="fa-regular fa-star fa-xl"></i></span>
+                                        <span><i class="fa-regular fa-star fa-xl"></i></span>
+                                    </div>
+                                    <div class="modal-action justify-around mb-4">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn btn-outline btn-error">Close</button>
+                                        <button class="btn bg-[#F85559] text-white rounded-lg">Buy Now</button>
+                                    </div>
+                                </form>
+                            </dialog>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-12">
+                <button class="py-5 px-8 bg-[#F85559] text-white rounded-lg text-xl font-bold font-lato">Shop All</button>
+            </div>
+        </section>
 
     </main>
 </body>
